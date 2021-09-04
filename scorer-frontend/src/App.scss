@@ -1,0 +1,139 @@
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+
+.loader{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.8);
+  img{
+    width: 300px;
+    height: 250px;
+  }
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: white;
+  .menubar{
+    border-top: 1px solid #ccc;
+    box-shadow: 2px 0px 10px #ccc;
+    .menuitem{
+      flex:1;
+      border-right: 1px solid #ccc;
+      font-size:small;
+      img{
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .menuitem:last-child{
+      border-right: 0px solid #ccc;
+    }
+  }
+}
+
+.header{
+  display: flex;
+  justify-content:center;
+  .title{
+    font-weight: bold;
+  }
+  columns: #999999;;
+  box-shadow: 0px 0px 10px #cccccc;
+}
+
+.menubar{
+  .menuitem{
+    &.selected{
+      background-color: #ededed;
+    }
+    &:hover{
+      background-color: #f2f2f2;
+    }
+  }
+}
+
+.full-height{
+  // height: 100vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow-y:scroll;
+  padding-bottom: 6rem;
+}
+
+.team-list-item{
+  box-shadow: 1px 1px 7px #cccccc;
+  .teampic{
+    width: 50px;
+    height: 50px;
+  }
+  .team-stats{
+    font-size:10px;
+  }
+}
+
+.player-list-item{
+  box-shadow: 1px 1px 7px #cccccc;
+  .playerpic{
+    width: 50px;
+    height: 50px;
+  }
+  .player-stats{
+    font-size:10px;
+  }
+}
+
+.team-page{
+  .team-page-header{
+    .teampic{
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.playerpic{
+  width: 50px;
+  height: 50px;
+}
+
+.smaller{
+  font-size:10px;
+}
+
+.player-stats-card{
+  box-shadow: 1px 1px 4px #cccccc;
+}
+
+@for $i from 1 through 10 {
+  .flex-#{$i} {
+    flex:($i);
+  }
+}
+
+
+.match-over{
+  overflow-x: scroll;
+  .run-value{
+    border: 1px solid #ededed;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    box-shadow: 1px 0.5px 2px #cccccc;
+  }
+}
